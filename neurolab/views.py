@@ -29,3 +29,8 @@ def isa(request):
     return render(request, 'Servicios/isa.html')
 def reporteClinico(request):
     return render(request, 'Servicios/reporteClinico.html')
+
+def prueba1(request):
+    return render(request, 'pruebas/prueba1.html')
+def registroPaciente(request):
+    return render(request, 'pruebas/registroPaciente.html')    

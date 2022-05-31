@@ -17,4 +17,7 @@ urlpatterns = [
     path('enc', views.enc, name='enc'),
     path('isa', views.isa, name='isa'),
     path('reporteClinico', views.reporteClinico, name='reporteClinico'),
+
+    path('prueba1', views.prueba1, name='prueba1'),
+    path('registroPaciente', views.registroPaciente, name='registroPaciente'),
 ]
