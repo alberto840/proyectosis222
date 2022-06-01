@@ -1,0 +1,17 @@
+{% extends "base.html" %}
+
+{% block titulo %} Contactanos {% endblock %}
+
+{% block contenido %}
+<div class="px-4 py-5 my-5 text-center">
+    <img class="d-block mx-auto mb-4" src="https://img.freepik.com/vector-gratis/gorra-cumpleanos-confeti-explosion-serpentina_1017-17924.jpg?w=2000" alt="" width="172" height="172">
+    <h1 class="display-5 fw-bold">Bienvenido:</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">{{ user.username }}</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center">
+        <a href="{% url 'registroPaciente' %}"><button type="button" class="btn btn-primary btn-lg px-4 gap-3">Registrar paciente</button></a>
+        <a href="{% url 'logout' %}"><button type="button" class="btn btn-outline-secondary btn-lg px-4">Cerrar Sesion</button></a>
+      </div>
+    </div>
+  </div>
+{% endblock %}

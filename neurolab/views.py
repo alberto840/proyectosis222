@@ -34,3 +34,6 @@ def prueba1(request):
     return render(request, 'pruebas/prueba1.html')
 def registroPaciente(request):
     return render(request, 'pruebas/registroPaciente.html')    
+
+def bienvenido(request):
+    return render(request, 'paginas/bienvenido.html') 
