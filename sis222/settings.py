@@ -79,9 +79,9 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'neurolap',
         'USER': 'postgres',
-        'PASSWORD':'root',
-        'HOST':'127.0.0.1',
-        'DATABASE_PORT':'5432'
+        'PASSWORD':'ponen_la_contraseña_de_su_PostgreSQL',
+        'HOST':'localhost',
+        'DATABASE_PORT':''
     }
 }
 
