@@ -82,9 +82,12 @@ DATABASES = {
         'PASSWORD':'root',
 <<<<<<< Updated upstream
 <<<<<<< Updated upstream
+<<<<<<< Updated upstream
         'HOST':'127.0.0.1',
         'DATABASE_PORT':'5432'
 =======
+=======
+>>>>>>> Stashed changes
 =======
 >>>>>>> Stashed changes
         'HOST':'localhost',
