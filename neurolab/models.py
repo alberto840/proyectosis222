@@ -109,13 +109,3 @@ class referencia_contacto(models.Model):
     def _str_(self):
         texto = "{0} ({1})"
         return texto.format(self.nombre_contacto,self.telefono_contacto)
-
-
-
-
-
-
-
-
-
-
