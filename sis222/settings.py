@@ -11,6 +11,11 @@ https://docs.djangoproject.com/en/4.0/ref/settings/
 """
 
 from pathlib import Path
+from telnetlib import LOGOUT
+
+from django.urls import reverse_lazy
+
+import neurolab
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -79,9 +84,9 @@ DATABASES = {
         'ENGINE': 'django.db.backends.postgresql_psycopg2',
         'NAME': 'neurolap',
         'USER': 'postgres',
-        'PASSWORD':'root',
-        'HOST':'127.0.0.1',
-        'DATABASE_PORT':'5432'
+        'PASSWORD':'ponen_la_contraseña_de_su_PostgreSQL',
+        'HOST':'localhost',
+        'DATABASE_PORT':''
     }
 }
 
@@ -116,6 +121,8 @@ USE_I18N = True
 
 USE_TZ = True
 
+LOGIN_REDIRECT_URL = reverse_lazy('bienvenido')
+LOGOUT_REDIRECT_URL = reverse_lazy('investigaciones')
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.0/howto/static-files/
