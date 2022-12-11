@@ -2,4 +2,45 @@
 
 {% block titulo %} Contactanos {% endblock %}
 
-{% block contenido %} Seccion de Contactanos {% endblock %}
+{% block contenido %}
+<div class="col-lg-8 mx-auto p-3 py-md-5">
+    <header class="d-flex align-items-center pb-3 mb-5 border-bottom">
+      <a href="https://getbootstrap.com/" class="d-flex align-items-center text-dark text-decoration-none">
+        <span class="fs-4">Contactanos</span>
+      </a>
+    </header>
+  
+    <main>
+      <h1>Consulte sus dudas</h1>
+      <div class="mb-3">
+        <label for="" class="form-label">Ingrese su nombre:</label>
+        <input type="text|password|email|number|submit|date|datetime|datetime-local|month|color|range|search|tel|time|url|week"
+          class="form-control" name="" id="" aria-describedby="helpId" placeholder="">
+        <small id="helpId" class="form-text text-muted"></small>
+      </div>
+    <div class="mb-3">
+      <label for="" class="form-label">Ingrese su duda:</label>
+      <textarea class="form-control" name="" id="" rows="3"></textarea>
+    </div>
+      <div class="mb-3">
+        <label for="" class="form-label">Ingrese su email para contactarnos con usted:</label>
+        <input type="email" class="form-control" name="" id="" aria-describedby="emailHelpId" placeholder="">
+        <small id="emailHelpId" class="form-text text-muted">Su email no será publicado.</small>
+      </div>
+  
+      <div class="mb-5">
+        <a href="https://getbootstrap.com/docs/5.2/examples/" class="btn btn-primary btn-lg px-4">Enviar consulta</a>
+      </div>
+  
+      <hr class="col-3 col-md-2 mb-5">
+  
+      <div class="row g-5">
+        <div class="col-md-6">
+          <h2>Direccion</h2>
+          <p>Av. Arce 2142, La Paz</p>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d10769.912573623531!2d-66.1656380670312!3d-17.376282560791743!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x93e375679dd34505%3A0xb0ec15a01a7db527!2sNeurolab%20Latinoam%C3%A9rica!5e0!3m2!1ses!2sbo!4v1654019716679!5m2!1ses!2sbo" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </main>
+  </div>
+{% endblock %}
